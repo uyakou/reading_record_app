@@ -1,4 +1,4 @@
-<section class="hero is-success">
+<section class="hero is-primary">
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
@@ -15,7 +15,7 @@
         <div class="card">
           <div class="card-image">
             <figure class="image is-4by3">
-              <%= attachment_image_tag @book, :image %>
+              <%= attachment_image_tag @book, :image, fallback: "no-image.png", class: "fit_image" %>
             </figure>
           </div>
           <div class="card-content">
@@ -42,7 +42,7 @@
       </div>
 
       <div class="column is-4">
-        <article class="panel is-link">
+        <article class="panel is-primary">
           <p class="panel-heading">
             By <%= @book.user.username %>
           </p>

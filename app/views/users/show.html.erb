@@ -1,4 +1,4 @@
-<section class="hero is-success">
+<section class="hero is-primary">
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
@@ -57,7 +57,7 @@
             <div class="card-image">
               <figure class="image is-4by3">
                 <%= link_to book_path(book) do %>
-                  <%= attachment_image_tag book, :image, fallback: "no-image.png" %>
+                  <%= attachment_image_tag book, :image, fallback: "no-image.png", class: "fit_image" %>
                 <% end %>
               </figure>
             </div>
