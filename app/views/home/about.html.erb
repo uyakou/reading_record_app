@@ -1,0 +1,25 @@
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        このページについて
+      </h1>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    読書感想を投稿できるＳＮＳです。
+    <br>
+    Ruby on Railsを使用して作成しています。
+    <br>
+    <br>
+    基本的にログインしないと機能が使用できないようになっていますので、
+    <br>
+    ユーザー登録が面倒であれば、<%= link_to '簡単ログイン', users_guest_sign_in_path, method: :post %>を使用するようお願いいたします。
+    <br>
+    ※スマホ非対応です。
+    <br>
+  </div>
+</section>
