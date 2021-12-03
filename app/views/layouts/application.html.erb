@@ -13,22 +13,20 @@
 
   <body>
     <% if flash[:notice] %>
-      <div class="notification is-danger">
+      <div class="notification is-primary">
         <p class="notice"><%= notice %></p>
       </div>
     <% end %>
 
     <% if flash[:alert] %>
-      <div class="notification is-danger">
+      <div class="notification is-primary">
         <p class="alert"><%= alert %></p>
       </div>
     <% end %>
 
     <nav class="navbar">
       <div class="navbar-brand">
-        <%= link_to root_path, class: "navbar-item" do %>
-          <h1 class="title_font">読書感想投稿ＳＮＳ</h1>
-        <% end %>
+          <h1><%= link_to image_tag("logo.png", alt: "SHIORI logo", style: "height: 40px;"),root_path %></h1>
         <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
           <span></span>
           <span></span>

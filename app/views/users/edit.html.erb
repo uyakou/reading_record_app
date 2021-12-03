@@ -1,4 +1,4 @@
-<section class="hero is-primary">
+<section class="hero">
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
@@ -10,7 +10,7 @@
 
 
 <% if @user.errors.any? %>
-  <div class="notification is-danger">
+  <div class="notification is-primary">
     <h2><%= pluralize(@user.errors.count, "error") %> prohibited this object from being saved: not successfully</h2>
     <ul>
       <% @user.errors.full_messages.each do |message| %>
