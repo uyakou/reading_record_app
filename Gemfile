@@ -58,6 +58,10 @@ group :test do
   gem 'chromedriver-helper'
 end
 
+group :production do
+  gem 'pg', '0.20.0'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
@@ -68,3 +72,4 @@ gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
 gem "bulma-rails"
 gem 'kaminari'
+gem "aws-sdk-s3", require: false #追記
