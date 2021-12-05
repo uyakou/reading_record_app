@@ -1,5 +1,6 @@
 class BooksController < ApplicationController
   before_action :authenticate_user!, except: [:index]
+  PER = 6
   
   def new
     @book = Book.new
@@ -15,7 +16,7 @@ class BooksController < ApplicationController
   end
   
   def index
-    @books = Book.page(params[:page]).per(6)
+    @books = Book.page(params[:page]).per(PER)
   end
   
   def show
